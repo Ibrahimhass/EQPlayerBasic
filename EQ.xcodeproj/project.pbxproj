@@ -45,7 +45,6 @@
 		892FD8681B95A65E00691F3C /* EQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EQTests.m; sourceTree = "<group>"; };
 		892FD8721B95D85900691F3C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8955A80E1B9605130004470B /* sample.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.m4a; sourceTree = "<group>"; };
-		ED11AECB2118086D0007769C /* TheUndertaker.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheUndertaker.m4a; sourceTree = "<group>"; };
 		ED11AECC21180B5A0007769C /* Dangal_-_Title_Song-Pritam-Daler_Mehndi-www.Mp3Mad.Com.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dangal_-_Title_Song-Pritam-Daler_Mehndi-www.Mp3Mad.Com.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +93,6 @@
 				892FD8501B95A65E00691F3C /* AppDelegate.h */,
 				892FD8511B95A65E00691F3C /* AppDelegate.m */,
 				892FD8531B95A65E00691F3C /* ViewController.h */,
-				ED11AECB2118086D0007769C /* TheUndertaker.m4a */,
 				892FD8541B95A65E00691F3C /* ViewController.m */,
 				ED11AECC21180B5A0007769C /* Dangal_-_Title_Song-Pritam-Daler_Mehndi-www.Mp3Mad.Com.mp3 */,
 				892FD8561B95A65E00691F3C /* Main.storyboard */,
