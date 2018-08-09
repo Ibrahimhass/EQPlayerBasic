@@ -32,15 +32,15 @@
     audioFile = [[AVAudioFile alloc] initForReading:[NSURL fileURLWithPath:filePath] error:nil];
     
     // high
-    AVAudioUnitEQFilterParameters *parametersHigh = EQNode.bands[0];
-    parametersHigh.filterType = AVAudioUnitEQFilterTypeHighPass;
-    parametersHigh.frequency = (int)_sliderHigh.value;
-    parametersHigh.bypass = NO;
-    // low
-    AVAudioUnitEQFilterParameters *parametersLow = EQNode.bands[1];
-    parametersLow.filterType = AVAudioUnitEQFilterTypeLowPass;
-    parametersLow.frequency = (int)_sliderLow.value;
-    parametersLow.bypass = NO;
+//    AVAudioUnitEQFilterParameters *parametersHigh = EQNode.bands[0];
+//    parametersHigh.filterType = AVAudioUnitEQFilterTypeHighPass;
+//    parametersHigh.frequency = (int)_sliderHigh.value;
+//    parametersHigh.bypass = NO;
+//    // low
+//    AVAudioUnitEQFilterParameters *parametersLow = EQNode.bands[1];
+//    parametersLow.filterType = AVAudioUnitEQFilterTypeLowPass;
+//    parametersLow.frequency = (int)_sliderLow.value;
+//    parametersLow.bypass = NO;
     // 16k
     AVAudioUnitEQFilterParameters *parameters16k = EQNode.bands[2];
     parameters16k.filterType = AVAudioUnitEQFilterTypeParametric;
@@ -145,21 +145,21 @@
     }
 }
 
-- (IBAction)slideHighAction:(id)sender {
-    UISlider *slider = (UISlider*)sender;
-    AVAudioUnitEQFilterParameters * filterParameters = EQNode.bands[0];
-    filterParameters.filterType = AVAudioUnitEQFilterTypeHighPass;
-    filterParameters.frequency = (long)slider.value;
-    _labelHigh.text = [NSString stringWithFormat:@"%ld", (long)slider.value];
-}
-
-- (IBAction)slideLowAction:(id)sender {
-    UISlider *slider = (UISlider*)sender;
-    AVAudioUnitEQFilterParameters * filterParameters = EQNode.bands[1];
-    filterParameters.filterType = AVAudioUnitEQFilterTypeLowPass;
-    filterParameters.frequency = (long)slider.value;
-    _labelLow.text = [NSString stringWithFormat:@"%ld", (long)slider.value];
-}
+//- (IBAction)slideHighAction:(id)sender {
+//    UISlider *slider = (UISlider*)sender;
+//    AVAudioUnitEQFilterParameters * filterParameters = EQNode.bands[0];
+//    filterParameters.filterType = AVAudioUnitEQFilterTypeHighPass;
+//    filterParameters.frequency = (long)slider.value;
+//    _labelHigh.text = [NSString stringWithFormat:@"%ld", (long)slider.value];
+//}
+//
+//- (IBAction)slideLowAction:(id)sender {
+//    UISlider *slider = (UISlider*)sender;
+//    AVAudioUnitEQFilterParameters * filterParameters = EQNode.bands[1];
+//    filterParameters.filterType = AVAudioUnitEQFilterTypeLowPass;
+//    filterParameters.frequency = (long)slider.value;
+//    _labelLow.text = [NSString stringWithFormat:@"%ld", (long)slider.value];
+//}
 
 - (IBAction)slide16KAction:(id)sender {
     UISlider *slider = (UISlider*)sender;

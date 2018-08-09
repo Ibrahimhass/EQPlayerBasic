@@ -14,9 +14,9 @@
 		892FD85A1B95A65E00691F3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892FD8591B95A65E00691F3C /* Images.xcassets */; };
 		892FD85D1B95A65E00691F3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892FD85B1B95A65E00691F3C /* LaunchScreen.xib */; };
 		892FD8691B95A65E00691F3C /* EQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 892FD8681B95A65E00691F3C /* EQTests.m */; };
-		892FD8731B95D85900691F3C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892FD8721B95D85900691F3C /* AVFoundation.framework */; };
 		8955A80F1B960B8D0004470B /* sample.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8955A80E1B9605130004470B /* sample.m4a */; };
 		ED11AECD21180B5A0007769C /* Dangal_-_Title_Song-Pritam-Daler_Mehndi-www.Mp3Mad.Com.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED11AECC21180B5A0007769C /* Dangal_-_Title_Song-Pritam-Daler_Mehndi-www.Mp3Mad.Com.mp3 */; };
+		ED6FE3BC211C99790013D954 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6FE3BB211C99790013D954 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +43,9 @@
 		892FD8621B95A65E00691F3C /* EQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		892FD8671B95A65E00691F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		892FD8681B95A65E00691F3C /* EQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EQTests.m; sourceTree = "<group>"; };
-		892FD8721B95D85900691F3C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8955A80E1B9605130004470B /* sample.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.m4a; sourceTree = "<group>"; };
 		ED11AECC21180B5A0007769C /* Dangal_-_Title_Song-Pritam-Daler_Mehndi-www.Mp3Mad.Com.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dangal_-_Title_Song-Pritam-Daler_Mehndi-www.Mp3Mad.Com.mp3"; sourceTree = "<group>"; };
+		ED6FE3BB211C99790013D954 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				892FD8731B95D85900691F3C /* AVFoundation.framework in Frameworks */,
+				ED6FE3BC211C99790013D954 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,10 +70,10 @@
 		892FD8401B95A65E00691F3C = {
 			isa = PBXGroup;
 			children = (
-				892FD8721B95D85900691F3C /* AVFoundation.framework */,
 				892FD84B1B95A65E00691F3C /* EQ */,
 				892FD8651B95A65E00691F3C /* EQTests */,
 				892FD84A1B95A65E00691F3C /* Products */,
+				ED6FE3BA211C99790013D954 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +135,14 @@
 				8955A80E1B9605130004470B /* sample.m4a */,
 			);
 			name = data;
+			sourceTree = "<group>";
+		};
+		ED6FE3BA211C99790013D954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED6FE3BB211C99790013D954 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

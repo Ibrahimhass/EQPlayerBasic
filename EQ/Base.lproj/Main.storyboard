@@ -25,10 +25,10 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-XR-wIC">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkl-oS-Dbl">
-                                                <rect key="frame" x="0.0" y="0.0" width="182.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Playback">
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -38,7 +38,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jED-IA-IHi">
-                                                <rect key="frame" x="192.5" y="0.0" width="182.5" height="50"/>
+                                                <rect key="frame" x="192.5" y="0.0" width="182.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="stop">
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,69 +49,23 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u2s-8e-0ZV">
-                                        <rect key="frame" x="0.0" y="50" width="375" height="49.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KA0-8M-8vO">
-                                                <rect key="frame" x="0.0" y="14.5" width="36" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1500" minValue="0.0" maxValue="30000" translatesAutoresizingMaskIntoConstraints="NO" id="IjL-65-zhW">
-                                                <rect key="frame" x="44" y="9.5" width="312.5" height="31"/>
-                                                <connections>
-                                                    <action selector="slideHighAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="HMM-rX-wbe"/>
-                                                </connections>
-                                            </slider>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XI5-oL-801">
-                                                <rect key="frame" x="364.5" y="14.5" width="10.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="L5c-eG-iXt">
-                                        <rect key="frame" x="0.0" y="99.5" width="375" height="50"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTG-C7-cl3">
-                                                <rect key="frame" x="0.0" y="0.0" width="31" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1500" minValue="0.0" maxValue="30000" translatesAutoresizingMaskIntoConstraints="NO" id="3im-lx-mY9">
-                                                <rect key="frame" x="39" y="0.0" width="317.5" height="51"/>
-                                                <connections>
-                                                    <action selector="slideLowAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="98f-Ll-0ie"/>
-                                                </connections>
-                                            </slider>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n61-wm-zI0">
-                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S5t-NO-78r">
-                                        <rect key="frame" x="0.0" y="149.5" width="375" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="59" width="375" height="58.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16K" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klG-VO-TyC">
-                                                <rect key="frame" x="0.0" y="0.0" width="29" height="49.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="29" height="58.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="mDm-cd-zF8">
-                                                <rect key="frame" x="37" y="0.0" width="319.5" height="50.5"/>
+                                                <rect key="frame" x="37" y="0.0" width="319.5" height="59.5"/>
                                                 <connections>
                                                     <action selector="slide16KAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="OsJ-AA-Xo3"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9M-Hp-qrO">
-                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="49.5"/>
+                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="58.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -119,22 +73,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Scf-N8-JQx">
-                                        <rect key="frame" x="0.0" y="199" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="117.5" width="375" height="59"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8K" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pm6-Fe-9wV">
-                                                <rect key="frame" x="0.0" y="0.0" width="21.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="21.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="adQ-dO-RXR">
-                                                <rect key="frame" x="29.5" y="0.0" width="327" height="51"/>
+                                                <rect key="frame" x="29.5" y="0.0" width="327" height="60"/>
                                                 <connections>
                                                     <action selector="slider8KAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="e3w-j7-WlQ"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIH-lf-WZG">
-                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="50"/>
+                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -142,22 +96,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0aW-ix-B08">
-                                        <rect key="frame" x="0.0" y="249" width="375" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="176.5" width="375" height="59"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4K" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N28-QX-ORA">
-                                                <rect key="frame" x="0.0" y="0.0" width="21.5" height="49.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="21.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="DvK-Cd-51X">
-                                                <rect key="frame" x="29.5" y="0.0" width="327" height="50.5"/>
+                                                <rect key="frame" x="29.5" y="0.0" width="327" height="60"/>
                                                 <connections>
                                                     <action selector="slider4KAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="tKl-Ps-fi3"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4X-1n-Fc3">
-                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="49.5"/>
+                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -165,22 +119,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aOd-mc-Pxe">
-                                        <rect key="frame" x="0.0" y="298.5" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="235.5" width="375" height="58.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2K" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3za-2q-6dK">
-                                                <rect key="frame" x="0.0" y="0.0" width="21" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="21" height="58.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="zda-Bk-b9B">
-                                                <rect key="frame" x="29" y="0.0" width="327.5" height="51"/>
+                                                <rect key="frame" x="29" y="0.0" width="327.5" height="59.5"/>
                                                 <connections>
                                                     <action selector="slider2KAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="g7h-PP-u5b"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3S-Of-K2R">
-                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="50"/>
+                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="58.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -188,22 +142,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NCo-EM-3YZ">
-                                        <rect key="frame" x="0.0" y="348.5" width="375" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="294" width="375" height="59"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1K" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uea-r7-SXs">
-                                                <rect key="frame" x="0.0" y="0.0" width="18.5" height="49.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="18.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="uHZ-za-NJg">
-                                                <rect key="frame" x="26.5" y="0.0" width="330" height="50.5"/>
+                                                <rect key="frame" x="26.5" y="0.0" width="330" height="60"/>
                                                 <connections>
                                                     <action selector="slider1KAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="K7K-oI-Fcq"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aO-VG-gdx">
-                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="49.5"/>
+                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -211,22 +165,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gXD-Jp-xwH">
-                                        <rect key="frame" x="0.0" y="398" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="353" width="375" height="58.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryS-Gv-Yin">
-                                                <rect key="frame" x="0.0" y="0.0" width="31" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="58.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="J1W-5w-oR9">
-                                                <rect key="frame" x="39" y="0.0" width="317.5" height="51"/>
+                                                <rect key="frame" x="39" y="0.0" width="317.5" height="59.5"/>
                                                 <connections>
                                                     <action selector="slider500Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="kR3-3Y-lLo"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mff-TE-PMc">
-                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="50"/>
+                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="58.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -234,22 +188,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Rf-Mm-SJI">
-                                        <rect key="frame" x="0.0" y="448" width="375" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="411.5" width="375" height="59"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drg-Bu-6cG">
-                                                <rect key="frame" x="0.0" y="0.0" width="30.5" height="49.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="ch3-ew-FCn">
-                                                <rect key="frame" x="38.5" y="0.0" width="318" height="50.5"/>
+                                                <rect key="frame" x="38.5" y="0.0" width="318" height="60"/>
                                                 <connections>
                                                     <action selector="slider250Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="v2c-0d-p98"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3z-kx-8rE">
-                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="49.5"/>
+                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -257,22 +211,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JXD-03-7Vv">
-                                        <rect key="frame" x="0.0" y="497.5" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="470.5" width="375" height="59"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="125" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFQ-uH-TEK">
-                                                <rect key="frame" x="0.0" y="0.0" width="28" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="28" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="Oh6-Fl-Jct">
-                                                <rect key="frame" x="36" y="0.0" width="320.5" height="51"/>
+                                                <rect key="frame" x="36" y="0.0" width="320.5" height="60"/>
                                                 <connections>
                                                     <action selector="slider125Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="kGq-yM-ab1"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euC-eT-6Hz">
-                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="50"/>
+                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -280,22 +234,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rwi-Gj-2xf">
-                                        <rect key="frame" x="0.0" y="547.5" width="375" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="529.5" width="375" height="58.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="64" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Je-lL-fv7">
-                                                <rect key="frame" x="0.0" y="0.0" width="21" height="49.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="21" height="58.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="XOd-hj-mGa">
-                                                <rect key="frame" x="29" y="0.0" width="327.5" height="50.5"/>
+                                                <rect key="frame" x="29" y="0.0" width="327.5" height="59.5"/>
                                                 <connections>
                                                     <action selector="slider64Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="mB1-OM-T6A"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0F-fr-pgG">
-                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="49.5"/>
+                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="58.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -303,22 +257,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t2w-5D-LJq">
-                                        <rect key="frame" x="0.0" y="597" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="588" width="375" height="59"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBi-zf-p60">
-                                                <rect key="frame" x="0.0" y="0.0" width="20.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="20.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="x3V-2j-9ug">
-                                                <rect key="frame" x="28.5" y="0.0" width="328" height="51"/>
+                                                <rect key="frame" x="28.5" y="0.0" width="328" height="60"/>
                                                 <connections>
                                                     <action selector="slider32Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="lPQ-gc-zN5"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mg1-pH-Xs4">
-                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="50"/>
+                                                <rect key="frame" x="364.5" y="0.0" width="10.5" height="59"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -347,8 +301,6 @@
                         <outlet property="label500" destination="mff-TE-PMc" id="e9l-UQ-xSU"/>
                         <outlet property="label64" destination="x0F-fr-pgG" id="1Rf-yN-D3p"/>
                         <outlet property="label8K" destination="ZIH-lf-WZG" id="w8z-lu-bG3"/>
-                        <outlet property="labelHigh" destination="XI5-oL-801" id="DQC-P5-Roi"/>
-                        <outlet property="labelLow" destination="n61-wm-zI0" id="Den-G2-1h6"/>
                         <outlet property="slider125" destination="Oh6-Fl-Jct" id="EpB-Sf-fhE"/>
                         <outlet property="slider16K" destination="mDm-cd-zF8" id="mni-iA-yni"/>
                         <outlet property="slider1K" destination="uHZ-za-NJg" id="XoB-AU-GXI"/>
@@ -359,8 +311,6 @@
                         <outlet property="slider500" destination="J1W-5w-oR9" id="9se-eo-sKU"/>
                         <outlet property="slider64" destination="XOd-hj-mGa" id="eTT-Qe-agv"/>
                         <outlet property="slider8K" destination="adQ-dO-RXR" id="qgK-MK-L2Y"/>
-                        <outlet property="sliderHigh" destination="IjL-65-zhW" id="9wJ-a2-Azf"/>
-                        <outlet property="sliderLow" destination="3im-lx-mY9" id="01X-tI-IlW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
